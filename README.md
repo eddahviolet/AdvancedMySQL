@@ -13,4 +13,6 @@ Creating the function FindAverageCost()
 
 Then use the function created to find the average cost of the product in the year 2021
 
+I misspeled the word average instead typing avaraga when creating the function, so I will write the function as FindAvaragaCost()
+
 ![use function](https://user-images.githubusercontent.com/106580846/207845375-5db4af0c-3c8c-49c1-ae25-e282cd172d65.png)
