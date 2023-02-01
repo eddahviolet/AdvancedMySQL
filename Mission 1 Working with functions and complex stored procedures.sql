@@ -1,4 +1,5 @@
 use Lucky_Shrub;
+
 -- MISSION 1: WORKING WITH FUNCTIONS & COMPLEX STORED PROCEDURES
 -- TASK 1
 /*Create a SQL function that prints the cost value of a specific order based on the user input of the OrderID. */
