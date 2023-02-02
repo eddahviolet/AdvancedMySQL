@@ -81,7 +81,7 @@ Create a DELETE trigger called NotifyProductDelete. This trigger must insert a n
 
 ![M2 3c](https://user-images.githubusercontent.com/106580846/216034696-c4f47b56-12d4-42f9-8d10-f08b13d1e456.png)
 
-## Mission 3: SELECT statement optimization in MySQL
+## Mission 4: SELECT statement optimization in MySQL
 Lucky Shrub need to execute a series of SELECT queries against their database to retrieve information on their employees and client orders. However, they need to optimize these queries first to make sure that they execute quickly and efficiently using MySQL database optimization techniques.
 
 #### Task 1
