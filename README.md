@@ -81,7 +81,7 @@ Create a DELETE trigger called NotifyProductDelete. This trigger must insert a n
 
 ![M2 3c](https://user-images.githubusercontent.com/106580846/216034696-c4f47b56-12d4-42f9-8d10-f08b13d1e456.png)
 
-## Mission 4: Working with MySQL Scheduled Events
+## Mission 3: Working with MySQL Scheduled Events
 
 #### Task 1
 Lucky Shrub’s Finance Department has just requested a report on all orders received this month. They need the report generated at 11:59 pm on the last day of the month. However, it's now the last day of the month and it's also approaching 12 noon. So, they need the report 12 hours from now. 
@@ -99,7 +99,7 @@ MySQL must check if the number of items for any record in the products table is 
 ![event 2a](https://user-images.githubusercontent.com/106580846/216618678-50f8b96e-1de2-4f8f-8fb6-621efe95a141.png)
 ![event 2b](https://user-images.githubusercontent.com/106580846/216618708-12dcbb99-800d-4a80-b3e1-7e58e4a56cae.png)
 
-## Mission 5: SELECT statement optimization in MySQL
+## Mission 4: SELECT statement optimization in MySQL
 Lucky Shrub need to execute a series of SELECT queries against their database to retrieve information on their employees and client orders. However, they need to optimize these queries first to make sure that they execute quickly and efficiently using MySQL database optimization techniques.
 
 #### Task 1
