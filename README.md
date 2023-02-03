@@ -81,10 +81,50 @@ Create a DELETE trigger called NotifyProductDelete. This trigger must insert a n
 
 ![M2 3c](https://user-images.githubusercontent.com/106580846/216034696-c4f47b56-12d4-42f9-8d10-f08b13d1e456.png)
 
-## Mission 4: SELECT statement optimization in MySQL
+## Mission 4: Working with MySQL Scheduled Events
+
+#### Task 1
+Lucky Shrub’s Finance Department has just requested a report on all orders received this month. They need the report generated at 11:59 pm on the last day of the month. However, it's now the last day of the month and it's also approaching 12 noon. So, they need the report 12 hours from now. 
+
+Create a one-off event named GenerateRevenueReport to achieve this, instruct MySQL to select all data inserted into the orders table this month and to place that data within a report data table
+
+![event 1a](https://user-images.githubusercontent.com/106580846/216618349-3e9e9cb5-0d5a-4b75-87ab-c174f98aa5ce.png)
+![event 1b](https://user-images.githubusercontent.com/106580846/216618400-e487286c-3e81-430d-b0b8-c556b664a4fe.png)
+
+#### Task 2
+Lucky shrub is reviewing their stock and needs to make sure that they have at least 50 units available for each item on sale. Use a recurring event named DailyRestock to achieve this. The event should occur once a day.
+
+MySQL must check if the number of items for any record in the products table is below 50. If MySQL locates a record below 50, then the number of items must be updated. 
+
+![event 2a](https://user-images.githubusercontent.com/106580846/216618678-50f8b96e-1de2-4f8f-8fb6-621efe95a141.png)
+![event 2b](https://user-images.githubusercontent.com/106580846/216618708-12dcbb99-800d-4a80-b3e1-7e58e4a56cae.png)
+
+## Mission 5: SELECT statement optimization in MySQL
 Lucky Shrub need to execute a series of SELECT queries against their database to retrieve information on their employees and client orders. However, they need to optimize these queries first to make sure that they execute quickly and efficiently using MySQL database optimization techniques.
 
 #### Task 1
 Lucky Shrub needs data on client orders. They have written the following SELECT query to retrieve all data from the Orders table:
 
 **SELECT * FROM Orders;**
+
+However, the data they need is contained within the OrderID, ProductID, Quantity and Date columns. So, these are the important fields that their query must target. Targeting other columns in the table is an inefficient use of resources.
+
+Rewrite the SELECT statement so that it is optimized.
+![select 1](https://user-images.githubusercontent.com/106580846/216619424-354da03c-4da7-4f93-b3bc-c3cf4571bb09.png)
+
+#### Task 2
+Lucky Shrub need to find the order placed by the client Cl1. They have written the following query to complete this task:
+
+**SELECT * FROM Orders WHERE ClientID ='Cl1';**
+
+However, this query’s execution plan shows that it does not use an index to perform this search, as indicated by the NULL values in possible_keys and keys columns.
+
+![idx 1](https://user-images.githubusercontent.com/106580846/216619681-db0d6f6f-faaa-48b2-80a4-03e347fec624.png)
+
+Optimize this query by creating an index named IdxClientID on the required column of the Orders table. 
+
+![idx 2](https://user-images.githubusercontent.com/106580846/216619787-771835a5-04bb-454b-a974-44d3860b7b5a.png)
+
+Run the same SELECT statement with the EXPLAIN statement.
+![idx 3](https://user-images.githubusercontent.com/106580846/216619860-d428b8d1-880d-4c77-918e-35cbfeb515d1.png)
+
