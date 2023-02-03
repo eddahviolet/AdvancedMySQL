@@ -1,5 +1,21 @@
 # AdvancedMySQLTopics
 
+Welcome to my repo this is a summary of my journey through the following advanced MySQL topics after working with database structures and management with MySQL.
+1.	Creating and working with functions and complex stored procedures in MySQL, make use of variables and parameters to create more complex stored functions and procedures in MySQL. 
+2.	Using MySQL triggers to automate database tasks. 
+3.	Creating scheduled events to ensure that your database tasks and events are completed at specific times. 
+4.	Guidelines for database optimization by:
+   * targeting required columns  
+   *	working with indexes in MySQL to speed up the performance of data retrieval queries.
+   *	using MySQL transaction statements to manage database transactions. 
+   *	using common table expressions to manage complex sequel queries 
+   *	use of prepared statements 
+   *	Interacting with the MySQL database using the JSON data type. 
+5.	Different types of data analysis that can be performed within a database using MySQL queries like joins, sub queries, and views. 
+6.	Emulating a full outer join in MySQL to extract all records from two tables including those that don't match. 
+7.	Extracting data from multiple tables using joins
+
+
 ## Mission 1: Developing functions & stored procedures in MySQL
 
 Lucky Shrub needs to query their database. They can do this by using functions and stored procedures in MySQL.
