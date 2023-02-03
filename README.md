@@ -122,9 +122,34 @@ However, this query’s execution plan shows that it does not use an index to pe
 ![idx 1](https://user-images.githubusercontent.com/106580846/216619681-db0d6f6f-faaa-48b2-80a4-03e347fec624.png)
 
 Optimize this query by creating an index named IdxClientID on the required column of the Orders table. 
-
 ![idx 2](https://user-images.githubusercontent.com/106580846/216619787-771835a5-04bb-454b-a974-44d3860b7b5a.png)
 
 Run the same SELECT statement with the EXPLAIN statement.
 ![idx 3](https://user-images.githubusercontent.com/106580846/216619860-d428b8d1-880d-4c77-918e-35cbfeb515d1.png)
+
+#### Task 3
+
+Lucky Shrub have written the following SELECT query to find the details of the employee whose last name is 'Tolo'
+
+**SELECT * FROM Employees WHERE FullName LIKE '%Tolo';**
+
+However, there’s an index on the FullName column which the query cannot use because it contains a leading wildcard (%) in the WHERE clause condition.
+
+###### Steps
+*	Add a new column to the Employees table called ReverseFullName.
+*	Populate the ReverseFullName column with the name of each employee as its values, but in reverse.
+*	Create an index named IdxReverseFullName on the ReverseFullName column.
+*	Rewrite the SELECT query so that it uses a trailing wildcard instead of the leading wild card.
+
+
+The Employee table before changes
+
+![emp 1](https://user-images.githubusercontent.com/106580846/216621045-8deee967-cd4b-477c-b1c9-520a8ced37a4.png)
+
+Adding new column called ReverseFullName
+![emp 4](https://user-images.githubusercontent.com/106580846/216622238-6345c2f4-e257-464b-8c5e-529a805867f4.png)
+
+Populate the ReverseFullName column with the name of each employee as its values, but in reverse.
+![emp 3](https://user-images.githubusercontent.com/106580846/216621536-de865509-0127-4d1b-9074-aa7a4ca7b8d6.png)
+ 
 
