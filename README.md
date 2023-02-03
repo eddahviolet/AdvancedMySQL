@@ -185,7 +185,7 @@ Create a prepared statement called GetOrderDetail that should accept two input a
 
 Use the prepared statement with the parameters of ClientID (Cl1) and Year (2020) 
 
-![ps 2](https://user-images.githubusercontent.com/106580846/216627039-cc4cad7b-3a7c-43a4-b2b8-6226da3e3d4c.png)
+![ps 2](https://user-images.githubusercontent.com/106580846/216628303-1152faae-b1ae-4037-bdd4-54a16185298a.png)
 
 #### Task 3
 The Lucky Shrub system logs the ClientID of each client, and the ProductID of the products they order, in a JSON Properties column in the Activity table as shown in the below table
