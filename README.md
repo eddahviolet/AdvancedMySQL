@@ -147,9 +147,21 @@ The Employee table before changes
 ![emp 1](https://user-images.githubusercontent.com/106580846/216621045-8deee967-cd4b-477c-b1c9-520a8ced37a4.png)
 
 Adding new column called ReverseFullName
+
 ![emp 4](https://user-images.githubusercontent.com/106580846/216622238-6345c2f4-e257-464b-8c5e-529a805867f4.png)
 
 Populate the ReverseFullName column with the name of each employee as its values, but in reverse.
+
 ![emp 3](https://user-images.githubusercontent.com/106580846/216621536-de865509-0127-4d1b-9074-aa7a4ca7b8d6.png)
  
+The Employees table would now look like this
 
+![emp 3](https://user-images.githubusercontent.com/106580846/216625458-592e60c5-00ac-4ccb-bdad-d2b8f596441f.png)
+
+Create an index named IdxReverseFullName on the ReverseFullName column
+
+![emp 4](https://user-images.githubusercontent.com/106580846/216625639-f424727b-cca6-461e-8955-a285075c7c37.png)
+
+Use the SELECT query using a trailing wildcard instead of the leading wildcard
+
+![emp 7](https://user-images.githubusercontent.com/106580846/216625849-a12aeab8-211c-40c9-b07b-4b6353943b43.png)
