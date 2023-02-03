@@ -165,3 +165,41 @@ Create an index named IdxReverseFullName on the ReverseFullName column
 Use the SELECT query using a trailing wildcard instead of the leading wildcard
 
 ![emp 7](https://user-images.githubusercontent.com/106580846/216625849-a12aeab8-211c-40c9-b07b-4b6353943b43.png)
+
+## Mission 5: Working with CTEs, Prepared Statement & JSON 
+
+#### Task 1
+Lucky Shrub need to find out how many orders were placed by clients with the following Client IDs in 2022; Cl1, Cl2 and Cl3. They have created the following query to extract this information.  
+
+**SELECT CONCAT("Cl1: ", COUNT(OrderID), "orders") AS "Total number of orders" FROM Orders WHERE YEAR(Date) = 2022 AND ClientID = "Cl1" UNION SELECT CONCAT("Cl2: ", COUNT(OrderID), "orders") FROM Orders WHERE YEAR(Date) = 2022 AND ClientID = "Cl2" UNION SELECT CONCAT("Cl3: ", COUNT(OrderID), "orders") FROM Orders WHERE YEAR(Date) = 2022 AND ClientID = "Cl3";**
+
+Optimize this query by recreating it as a CTE
+
+![cte 1](https://user-images.githubusercontent.com/106580846/216626783-fcc7c8a1-957f-4d90-9601-90b75ac86b42.png)
+![cte 2](https://user-images.githubusercontent.com/106580846/216626828-b34d9ff0-78a5-4559-8106-66e8f10f36e7.png)
+
+#### Task 2 
+Create a prepared statement called GetOrderDetail that should accept two input arguments: a ClientID value and a year value. The statement should return the order id, the quantity, the order cost and the order date from the Orders table.
+
+![ps 1](https://user-images.githubusercontent.com/106580846/216626995-be1de4e8-e85e-4b8b-bf87-6a2265671c92.png)
+
+Use the prepared statement with the parameters of ClientID (Cl1) and Year (2020) 
+
+![ps 2](https://user-images.githubusercontent.com/106580846/216627039-cc4cad7b-3a7c-43a4-b2b8-6226da3e3d4c.png)
+
+#### Task 3
+The Lucky Shrub system logs the ClientID of each client, and the ProductID of the products they order, in a JSON Properties column in the Activity table as shown in the below table
+
+![js 1](https://user-images.githubusercontent.com/106580846/216627279-b3ad9918-31d6-41eb-9eff-9fbbec6cb23b.png)
+
+Utilize the Properties column data to output the product id, name, buy price and sell price of the product where the Order value in the Activity table is True.
+The product name, buy price and sell price data must be extracted from the Products table.
+
+![js 2](https://user-images.githubusercontent.com/106580846/216627377-e39bbf67-cab9-4b18-8e49-bc247d04ac07.png)
+
+
+
+
+
+
+
