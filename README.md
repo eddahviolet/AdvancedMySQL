@@ -213,6 +213,43 @@ The product name, buy price and sell price data must be extracted from the Produ
 
 ![js 2](https://user-images.githubusercontent.com/106580846/216627377-e39bbf67-cab9-4b18-8e49-bc247d04ac07.png)
 
+## Mission 6: Data analysis in MySQL
+#### Objectives:
+*	Analyze data to gain insight into Lucky Shrub’s business performance.
+*	Query data from multiple tables.
+
+#### Task 1: Emulating full outer join in MySQL
+Lucky Shrub need to find out how many sycamore trees they’ve sold over the past few years. Sycamore trees have been assigned an ID of P4 in the products table in the database. Create a query that returns the total quantity of all products with the ID of P4 sold in the years 2020, 2021 and 2022. 
+
+![1a](https://user-images.githubusercontent.com/106580846/216962516-7a29a8b2-770a-4156-9437-1a3cf25a7706.png)
+
+![1b](https://user-images.githubusercontent.com/106580846/216962567-ee31e491-e875-47c8-b4d3-d96714dce2cf.png)
+
+#### Task 2: Using joins to extract data from multiple tables
+
+Lucky Shrub needs information on all their clients and the orders that they placed in the years 2022 and 2021. Extracting the required information from each of the following tables:
+
+*	Clients table: The client id and contact number for each client who placed an order
+*	Addresses table: The street and county for each client’s address
+*	Orders table: The order id, cost and date of each client’s order.
+*	Products table: The name of each product ordered.
+
+![2a](https://user-images.githubusercontent.com/106580846/216963023-ab18854a-fa21-40c1-89c1-4e85d657f203.png)
+
+![2b](https://user-images.githubusercontent.com/106580846/216963028-4280dfac-35b1-4009-94f8-7bc546e0cd38.png)
+
+#### Task 3
+Lucky Shrub needs to analyse the sales performance of their Patio slates product in the year 2021. This product has a Product ID of P3. Create a function called FindSoldQuantity that enables them to:
+
+* Input a ProductID and a year from which they can capture data
+* Display the total quantity of the product sold in the given year.
+
+![3a](https://user-images.githubusercontent.com/106580846/216963222-907678f8-cb92-4a7e-8159-58fe4b1d434a.png)
+
+If we enter a product id P3 and the year 2021, then the output result will be…….
+
+![3b](https://user-images.githubusercontent.com/106580846/216963251-2e3c75e1-c1f9-4e36-bae9-407c12fc1a36.png)
+
 
 
 
