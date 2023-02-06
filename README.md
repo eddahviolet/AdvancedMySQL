@@ -5,12 +5,12 @@ Welcome to my repo this is a summary of my journey through the following advance
 2.	Using MySQL triggers to automate database tasks. 
 3.	Creating scheduled events to ensure that your database tasks and events are completed at specific times. 
 4.	Guidelines for database optimization by:
-   * targeting required columns  
-   *	working with indexes in MySQL to speed up the performance of data retrieval queries.
-   *	using MySQL transaction statements to manage database transactions. 
-   *	using common table expressions to manage complex sequel queries 
-   *	use of prepared statements 
-   *	Interacting with the MySQL database using the JSON data type. 
+      * targeting required columns  
+      * working with indexes in MySQL to speed up the performance of data retrieval queries.
+      * using MySQL transaction statements to manage database transactions. 
+   	* using common table expressions to manage complex sequel queries 
+   	* use of prepared statements 
+   	* Interacting with the MySQL database using the JSON data type. 
 5.	Different types of data analysis that can be performed within a database using MySQL queries like joins, sub queries, and views. 
 6.	Emulating a full outer join in MySQL to extract all records from two tables including those that don't match. 
 7.	Extracting data from multiple tables using joins
